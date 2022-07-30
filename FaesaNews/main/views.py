@@ -5,4 +5,7 @@ def index(request):
     return render(request, 'index.html')
 
 def signup(request):
-    return render(request, 'signup.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+    else:
+        return render(request, 'signup.html')
