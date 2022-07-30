@@ -15,7 +15,9 @@ def signup(request):
         password2 = request.POST['password2']   
 
         if password == password2:
-            pass
+            if User.objects.filter(email=email).exists():
+                messages.info(request, 'Email já é cadastrado')
+                return redirect('signup')
         else:
             messages.info(request, 'Senhas não coincidem, tente de novo')
             return redirect(signup)
