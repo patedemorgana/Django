@@ -1,5 +1,4 @@
 #  Django project that i wanted to make
-This is absolutely not necessary and i could just make a wordpress blog
-but im a nerd and i want to test my skills
+Social Media app using a template i found on a youtube video and applied using django
 
-Building a social media website is crazyy
+but for some reason pages setting isnt showing my index.html
